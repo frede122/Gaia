@@ -1,0 +1,12 @@
+<?php
+
+namespace App\Contracts\Repository;
+
+
+interface BaseRepositoryInterface{
+    public function get($id);
+    public function getAll();
+    public function create($data);
+    public function update($data, $id);
+    public function delete($id);
+}
