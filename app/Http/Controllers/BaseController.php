@@ -27,7 +27,7 @@ abstract class BaseController extends Controller
         $result = $this->service->getAll();
 
         $status = isset($result['status']) ? $result['status'] : null;
-        return $this->responseWithJsonDefault($result, Status::ERROR);
+        return $this->responseWithJsonDefault($result, $status);
     }
 
     /**
