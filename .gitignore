@@ -1,6 +1,12 @@
+# Laravel
 /vendor
 /.idea
 Homestead.json
 Homestead.yaml
 .env
 .phpunit.result.cache
+
+# Node
+/node_modules
+npm-debug.log
+yarn-error.log
