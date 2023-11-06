@@ -99,6 +99,7 @@ class UserRepository extends AbstractBaseRepository implements UserRepositoryInt
                 return ['status' => Status::ERROR];
 
             $user->name = $input['name'];
+            $user->birth_date = $input['birth_date'];
             $user->save();
 
             if (isset($input['address'])) {

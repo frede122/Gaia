@@ -163,12 +163,13 @@ class AuthController extends Controller
     {
         $this->validate($req, [
             'name' => 'required',
+            'birth_date' => 'required',
             'address.rua' => 'required',
             'address.number' => 'required',
             'address.cep' => 'required',
             'address.city_id' => 'required',
         ]);
-        $data = $req->only(['name', 'address']);
+        $data = $req->only(['name','birth_date', 'address']);
         $id = auth()->user()['id'];
         $data = $this->userService->update($data, $id);
         return $this->responseWithJsonDefault($data, $data['status']);
