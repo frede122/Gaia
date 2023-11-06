@@ -19,6 +19,7 @@ class AddressSeeder extends Seeder
         Address::create([
             'rua'      => 'admin',
             'number'      => '555',
+            'neighborhood'      => 'campinhos',
             'cep'      => '123456',
             'city_id'  => 1,
             'id'  => 1,

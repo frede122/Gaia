@@ -18,6 +18,7 @@ class UsersTableSeeder extends Seeder
     {
         User::create([
             'name'      => 'admin',
+            'birth_date'      => '2000-01-01 01:01:01',
             'email'     => 'admin@meusite.com.br',
             'password'  => Hash::make('123456'),
             'address_id'  => 1,
