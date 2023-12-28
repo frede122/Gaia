@@ -89,16 +89,16 @@ abstract class BaseController extends Controller
         return $this->responseWithJsonDefault($result, $status);
     }
 
-    protected function responseWithJsonDefault($data, $status): JsonResponse
+    protected function responseWithJsonDefault($value, $status): JsonResponse
     {
-        if (isset($status, $data))
+        if (isset($status, $value))
             switch ($status) {
                 case Status::SUCCESS:
-                    return response()->json($data, 200);
+                    return response()->json($value['data'], 200);
                     break;
 
                 case Status::ERROR:
-                    return response()->json($data, 500);
+                    return response()->json($value, 500);
                     break;
 
             }

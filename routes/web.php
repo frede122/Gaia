@@ -4,6 +4,7 @@
 
 use App\Http\Controllers\Persons\ClientController;
 use App\Helpers\RouterApi;
+use App\Http\Controllers\Address\CityController;
 use Illuminate\Support\Facades\Route;
 use Laravel\Lumen\Routing\Router;
 
@@ -18,8 +19,12 @@ use Laravel\Lumen\Routing\Router;
 |
 */
 
+$router->group([], function ($router) {
+    require 'public.php';
+});
+
 $router->get('/', function () use ($router) {
-     return $router->app->version();
+    return $router->app->version();
 });
 // $router->group();
 
@@ -28,16 +33,15 @@ $router->get('/', function () use ($router) {
 
 Route::group([
     'prefix' => 'auth',
-], function ($router) {
-
+], function () {
     Route::post('login', 'Auth\AuthController@login');
     Route::get('logout', 'Auth\AuthController@logout');
     Route::get('refresh', 'Auth\AuthController@refresh');
     Route::get('me', 'Auth\AuthController@me');
     Route::put('update', 'Auth\AuthController@update');
 });
-$router->group([
-    'namespace' => 'Persons', 
+Route::group([
+    'namespace' => 'Persons',
     'prefix' => 'person'
 ], function ($router) {
     RouterApi::resource('client', 'ClientController');
@@ -45,10 +49,22 @@ $router->group([
 });
 
 // rota protegita
-$router->group([
-    'namespace' => 'Persons', 
+Route::group([
+    'namespace' => 'Persons',
     'prefix' => 'person',
     'middleware' => 'jwt.auth'
 ], function ($router) {
     RouterApi::resource('teste', 'ClientController');
+});
+
+Route::group([
+    'namespace' => 'Address',
+    'prefix' => 'address',
+    'middleware' => 'jwt.auth'
+], function () {
+    Route::get('city/state/{id}', 'CityController@getByState');
+    Route::get('city/{id}', 'CityController@show');
+    Route::get('city', 'CityController@index');
+    Route::get('state', 'StateController@index');
+    Route::get('state/{id}', 'StateController@show');
 });

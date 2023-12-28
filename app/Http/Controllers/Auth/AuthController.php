@@ -166,6 +166,7 @@ class AuthController extends Controller
             'birth_date' => 'required',
             'address.rua' => 'required',
             'address.number' => 'required',
+            'address.neighborhood' => 'required',
             'address.cep' => 'required',
             'address.city_id' => 'required',
         ]);

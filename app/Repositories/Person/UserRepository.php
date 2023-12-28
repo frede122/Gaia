@@ -107,6 +107,7 @@ class UserRepository extends AbstractBaseRepository implements UserRepositoryInt
                 $newAddress = $input['address'];
                 $address->rua = $newAddress['rua'];
                 $address->number = $newAddress['number'];
+                $address->neighborhood = $newAddress['neighborhood'];
                 $address->cep = $newAddress['cep'];
                 $address->city_id = $newAddress['city_id'];
                 $address->save();

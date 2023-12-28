@@ -18,12 +18,4 @@ class ClientController extends BaseController
         //
     }
 
-    // public function index(){
-    //     return response()->json(['ok' =>'dd', Client::get()]);
-    // }
-
-    // public function teste(){
-    //     return 'ok';
-    // }
-    //
 }

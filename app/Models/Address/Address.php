@@ -30,7 +30,4 @@ class Address extends Model
      *
      * @var array
      */
-    protected $hidden = [
-        'city_id',
-    ];
 }

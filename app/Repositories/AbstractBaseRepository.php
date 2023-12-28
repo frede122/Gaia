@@ -20,7 +20,7 @@ abstract class AbstractBaseRepository
     {
         try {
 
-            $data = $this->model->all();
+            $data['data'] = $this->model->all();
             $data['status'] = Status::SUCCESS;
 
             return $data;
