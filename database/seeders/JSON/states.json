@@ -1,0 +1,164 @@
+[
+    {
+        "id": 1,
+        "name": "Acre",
+        "flag": "",
+        "acronym": "AC"
+    },
+    {
+        "id": 2,
+        "name": "Alagoas",
+        "flag": "",
+        "acronym": "AL"
+    },
+    {
+        "id": 3,
+        "name": "Amapá",
+        "flag": "",
+        "acronym": "AP"
+    },
+    {
+        "id": 4,
+        "name": "Amazonas",
+        "flag": "",
+        "acronym": "AM"
+    },
+    {
+        "id": 5,
+        "name": "Bahia",
+        "flag": "",
+        "acronym": "BA"
+    },
+    {
+        "id": 6,
+        "name": "Ceará",
+        "flag": "",
+        "acronym": "CE"
+    },
+    {
+        "id": 7,
+        "name": "Distrito Federal",
+        "flag": "",
+        "acronym": "DF"
+    },
+    {
+        "id": 8,
+        "name": "Espírito Santo",
+        "flag": "",
+        "acronym": "ES"
+    },
+    {
+        "id": 9,
+        "name": "Goiás",
+        "flag": "",
+        "acronym": "GO"
+    },
+    {
+        "id": 10,
+        "name": "Maranhão",
+        "flag": "",
+        "acronym": "MA"
+    },
+    {
+        "id": 11,
+        "name": "Mato Grosso",
+        "flag": "",
+        "acronym": "MT"
+    },
+    {
+        "id": 12,
+        "name": "Mato Grosso do Sul",
+        "flag": "",
+        "acronym": "MS"
+    },
+    {
+        "id": 13,
+        "name": "Minas Gerais",
+        "flag": "",
+        "acronym": "MG"
+    },
+    {
+        "id": 14,
+        "name": "Pará",
+        "flag": "",
+        "acronym": "PA"
+    },
+    {
+        "id": 15,
+        "name": "Paraíba",
+        "flag": "",
+        "acronym": "PB"
+    },
+    {
+        "id": 16,
+        "name": "Paraná",
+        "flag": "",
+        "acronym": "PR"
+    },
+    {
+        "id": 17,
+        "name": "Pernambuco",
+        "flag": "",
+        "acronym": "PE"
+    },
+    {
+        "id": 18,
+        "name": "Piauí",
+        "flag": "",
+        "acronym": "PI"
+    },
+    {
+        "id": 19,
+        "name": "Rio de Janeiro",
+        "flag": "",
+        "acronym": "RJ"
+    },
+    {
+        "id": 20,
+        "name": "Rio Grande do Norte",
+        "flag": "",
+        "acronym": "RN"
+    },
+    {
+        "id": 21,
+        "name": "Rio Grande do Sul",
+        "flag": "",
+        "acronym": "RS"
+    },
+    {
+        "id": 22,
+        "name": "Rondônia",
+        "flag": "",
+        "acronym": "RO"
+    },
+    {
+        "id": 23,
+        "name": "Roraima",
+        "flag": "",
+        "acronym": "RR"
+    },
+    {
+        "id": 24,
+        "name": "Santa Catarina",
+        "flag": "",
+        "acronym": "SC"
+    },
+    {
+        "id": 25,
+        "name": "São Paulo",
+        "flag": "",
+        "acronym": "SP"
+    },
+    {
+        "id": 26,
+        "name": "Sergipe",
+        "flag": "",
+        "acronym": "SE"
+    },
+    {
+        "id": 27,
+        "name": "Tocantins",
+        "flag": "",
+        "acronym": "TO"
+    }
+]

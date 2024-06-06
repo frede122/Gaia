@@ -18,7 +18,7 @@ class AdressControllerSeeder extends Seeder
     public function run()
     {
         $this->call(StateSeeder::class);
-        $this->call(CitySeeder::class);
-        $this->call(AddressSeeder::class);
+        // $this->call(CitySeeder::class);
+        // $this->call(AddressSeeder::class);
     }
 }

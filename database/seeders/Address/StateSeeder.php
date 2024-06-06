@@ -2,6 +2,7 @@
 
 namespace Database\Seeders\Address;
 
+use App\Helpers\JsonSeeder;
 use App\Models\Address\Address;
 use App\Models\Address\State;
 use App\Models\User;
@@ -15,11 +16,16 @@ class StateSeeder extends Seeder
      *
      * @return void
      */
+
     public function run()
     {
-        State::create([
-            'name'      => 'PR',
-            'id'      => 1
-        ]);
+        // State::create([
+        //     'name'      => 'PR',
+        //     'id'      => 1
+        // ]);
+        // $file = 
+        $file = file_get_contents(base_path() . '\database\seeders\JSON\states.json');
+        $table = 'states';
+        JsonSeeder::seed($file, $table);
     }
 }
